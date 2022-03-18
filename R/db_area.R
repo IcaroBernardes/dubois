@@ -166,7 +166,7 @@ db_area <- function(data, order, cat1, cat2, dpi = 320, seed = 42,
       values_to = "x"
     ) %>%
     dplyr::select(-varname) %>%
-    dplyr::mutate(label = names)
+    dplyr::mutate(label = toupper(names))
 
   ## Defines the title, secondary axis title and message of the plot
   title <- paste0(toupper(title),"<br><span style='font-size:60px;'>",toupper(subtitle),"</span>")
