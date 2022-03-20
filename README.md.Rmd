@@ -1,0 +1,5 @@
+
+# dubois: From DuBois Challenge 2022 goes on with an area plot in ggplot2. It shows the percentage of blacks and whites in managerial positions 
+
+<img align="right" src="https://github.com/ipeaGIT/geobr/blob/master/r-package/man/figures/geobr_logo_y.png?raw=true" alt="logo" width="140">
+<p align="justify">dubois is a computational package to create area plot with ggplot2. It shows the percentage of blacks and whites in managerial positions. The development inspiration came from the #DuBoisChallenge2022 and the dissemination of SER (International Seminar on Statistics with R) </p> 
