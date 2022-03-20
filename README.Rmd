@@ -1,0 +1,21 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "tools/README-",
+  warning = FALSE
+)
+```
+
+# dubois: From DuBois Challenge 2022, I developed an area plot in ggplot2. It shows the percentage of blacks and whites in managerial positions 
+
+<img align="center" src="https://github.com/IcaroBernardes/dubois/blob/master/img/icaro_dubois_tt.jpeg?raw=true" alt="logo" height="200">
+<p align="justify">dubois is a computational package to create area plot with ggplot2. It shows the percentage of blacks and whites in managerial positions. The development inspiration came from the #DuBoisChallenge2022 and the dissemination of SER (International Seminar on Statistics with R) </p> 
