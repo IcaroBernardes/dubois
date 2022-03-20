@@ -1,7 +1,7 @@
 ---
 output:
-  md_document:
-    variant: markdown_github
+    md_document:
+      variant: markdown_github
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -15,7 +15,35 @@ knitr::opts_chunk$set(
 )
 ```
 
-# dubois: From DuBois Challenge 2022, I developed an area plot in ggplot2. It shows the percentage of blacks and whites in managerial positions 
+# dubois: From DuBois Challenge 2022, an area plot in 'ggplot2'
 
-<img align="center" src="https://github.com/IcaroBernardes/dubois/blob/master/img/icaro_dubois_tt.jpeg?raw=true" alt="logo" height="200">
-<p align="justify">dubois is a computational package to create area plot with ggplot2. It shows the percentage of blacks and whites in managerial positions. The development inspiration came from the #DuBoisChallenge2022 and the dissemination of SER (International Seminar on Statistics with R) </p> 
+<img align="left" src="https://github.com/IcaroBernardes/dubois/blob/master/img/dubois%20(2).png?raw=true" alt="logo" width="140"> 
+       
+[ggplot2, by Hadley Wickham, ](https://ggplot2.tidyverse.org/) is an excellent package for data visualization in R. From DuBois Challenge 2022, i developed an area plot in ggplot2. It shows the percentage of blacks and whites in managerial positions 
+
+The development inspiration came from the #DuBoisChallenge2022 and the dissemination of SER (International Seminar on Statistics with R).
+
+## Installation and loading
+
+- Install [GitHub](https://github.com/IcaroBernardes/dubois) as follow: 
+    
+   
+```{r, eval = FALSE}
+# Install
+if(!require(devtools)) install.packages("devtools")
+devtools::install_github("IcaroBernardes/dubois")
+```
+
+## Load
+     
+```{r dubois, warning=FALSE}
+library(dubois)
+
+df <- dubois::managers
+dubois::db_area()
+```
+
+## Blog posts
+   
+- Icaro BSC [Twitter](https://twitter.com/IcaroBSC/status/1501323176088780800)
+
