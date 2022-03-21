@@ -29,9 +29,10 @@ modern tools. The
 [#DuBoisChallenge2022](https://github.com/ajstarks/dubois-data-portraits/tree/master/challenge/2022)
 was the starting point to the `dubois` package.
 
-The package is under development and has these functions: - db_area:
-creates a vertical area chart with two categories that together amount
-to 100%.
+The package is under development and has these functions:
+
+-   db_area: creates a vertical area chart with two categories that
+    together amount to 100%.
 
 ## Installation and loading
 
