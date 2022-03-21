@@ -75,17 +75,21 @@ the area (like a the plot has been torn) as function of some parameters
 slots for text (\code{title}, \code{subtitle} and \code{message})
 }
 \examples{
-library(dplyr)
-library(tidyr)
-library(magrittr)
-data <- managers \%>\%
+library(dubois)
+
+data <- dubois::managers \%>\%
   dplyr::select(race, year, pct_bosses_total) \%>\%
   tidyr::pivot_wider(names_from = "race",
   values_from = "pct_bosses_total")
 
-db_area(data = data, order = "year", cat1 = "black", cat2 = "white",
-  limits = c(-3,4), filename = "managers.png",
-  title = "PARTICIPATION IN MANAGERIAL POSITIONS BY RACE IN BRAZIL.",
-  subtitle = "INSPIRED BY: W.E.B. DU BOIS | DATA FROM: IBGE | GRAPHIC BY: ICARO BERNARDES",
-  message = "IN THE SERIES, USUALLY WHITES OCCUPY SLIGHTLY LESS GENERAL WORK POSITIONS. HOWEVER WHITES OCCUPY WAY MORE MANAGERIAL POSITIONS THAN BLACKS")
+title <- "PARTICIPATION IN MANAGERIAL POSITIONS BY RACE IN BRAZIL."
+subtitle <- "INSPIRED BY: W.E.B. DU BOIS | DATA FROM: IBGE | GRAPHIC BY: ICARO BERNARDES"
+message <- "IN THE SERIES, USUALLY WHITES OCCUPY SLIGHTLY LESS GENERAL WORK POSITIONS. HOWEVER WHITES OCCUPY WAY MORE MANAGERIAL POSITIONS THAN BLACKS"
+
+dubois::db_area(data = data, order = "year", cat1 = "black", cat2 = "white",
+                limits = c(-3,4), filename = "managers.png",
+                title = title,
+                subtitle = subtitle,
+                message = message)
+
 }
