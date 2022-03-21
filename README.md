@@ -1,17 +1,17 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dubois <img align="right" src="https://github.com/IcaroBernardes/dubois/blob/master/man/figures/dubois.png" alt="logo" width="140">
+# dubois <img align="right" src="https://github.com/IcaroBernardes/dubois/blob/master/man/figures/dubois.png" alt="logo" width="200">
 
-<div>
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
 
 The R package, `dubois`, aids users to render Du Bois styled plots from
 custom datasets.
 
-</div>
-
-<div>
-
-W.E.B Du Bois (February 23, 1868 – August 27, 1963) was an American
+W.E.B. Du Bois (February 23, 1868 – August 27, 1963) was an American
 sociologist, socialist, historian and Pan-Africanist civil rights
 activist. Born in Great Barrington, Massachusetts, Du Bois grew up in a
 relatively tolerant and integrated community, and after completing
@@ -21,15 +21,22 @@ history, sociology and economics at Atlanta University. Du Bois was one
 of the founders of the National Association for the Advancement of
 Colored People (NAACP) in 1909 (*Source: Wikpedia*).
 
-The development inspiration came from the #DuBoisChallenge2022 and the
-dissemination of SER (International Seminar on Statistics with R).
+In the 1900 Paris Exposition his team made a historical display. They
+presented in many charts the situation of Black people in Georgia and
+the US in general. The timelessness of these posters provoked the
+dataviz community and they created challenges to reproduce them using
+modern tools. The
+[#DuBoisChallenge2022](https://github.com/ajstarks/dubois-data-portraits/tree/master/challenge/2022)
+was the starting point to the `dubois` package.
 
-</div>
+The package is under development and has these functions: - db_area:
+creates a vertical area chart with two categories that together amount
+to 100%.
 
 ## Installation and loading
 
--   Install dubois from
-    [GitHub](https://github.com/IcaroBernardes/dubois) as follows:
+Install dubois from [GitHub](https://github.com/IcaroBernardes/dubois)
+as follows:
 
 ``` r
 if(!require(devtools)) install.packages("devtools")
@@ -57,7 +64,11 @@ dubois::db_area(data = data, order = "year", cat1 = "black", cat2 = "white",
                 message = message)
 ```
 
-## Blog posts
+<p align="center">
+<img src="https://github.com/IcaroBernardes/dubois/blob/master/man/figures/managers.png" alt="logo" height="500">
+</p>
+
+## Challenge Posts
 
 -   Icaro BSC
     [Twitter](https://twitter.com/IcaroBSC/status/1501323176088780800)
