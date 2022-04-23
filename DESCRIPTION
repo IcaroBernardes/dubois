@@ -1,31 +1,40 @@
 Package: dubois
-Title: Collection of functions that render Du Bois based plots from custom datasets
+Title: Collection of functions that generate Du Bois based plots from user
+    datasets
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Ícaro Bernardes",
-          family = "dos Santos Coutinho",
-          email = "icaro@bitanalytics.dev.br",
-          role = c("aut", "cre"))
-Description: The package is under development. One function is already available coupled with an example dataset. The function takes a dataset and other arguments and delivers a plot in image format.
+    person("Icaro Bernardes", "dos Santos Coutinho", , "icaro@bitanalytics.dev.br", role = c("aut", "cre"))
+Description: Create Du Bois based plots using you own data with the
+    functions of this package! The data has to obey some requirements in
+    terms of its variables to work correctly. Arguments that allow you to
+    customize quality, texts and details of the plots are available.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
 URL: https://github.com/IcaroBernardes/dubois
 BugReports: https://github.com/IcaroBernardes/dubois/issues
 Depends: 
     R (>= 2.10)
-LazyData: true
 Imports: 
-    ggplot2,
+    curl,
     dplyr,
+    ggplot2,
+    glue,
     ggtext,
+    jsonlite,
+    magrittr,
     scales,
     showtext,
     stringr,
     sysfonts,
     tibble,
     tidyr,
-    magrittr,
-    jsonlite,
-    curl
+    withr,
+    rlang,
+    purrr,
+    stats
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

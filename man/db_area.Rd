@@ -42,7 +42,7 @@ numeric range of the order variable defines the step size of the bounded
 random walk.}
 
 \item{limits}{\strong{numeric vector:} the lower and superior limits that
-bound the random walk}
+bound the random walk. Must be given in that order: (lower, superior).}
 
 \item{names}{\strong{character vector:} the names of the categories. shown in
 the first areas in the superior part of the plot and in the vertical axis
@@ -70,7 +70,7 @@ horizontal axis. Their areas are stacked horizontally. The rightmost category
 (in red) has its values highlighted in the vertical axis on the right. The
 order variable is shown in the vertical axis and is labeled in the left. Both
 axes are inverted. A bounded random walk effect can be added to the left of
-the area (like a the plot has been torn) as function of some parameters
+the area (like the plot had been torn) as function of some parameters
 (\code{seed}, \code{res_step} and \code{limits}). Furthermore, there is three
 slots for text (\code{title}, \code{subtitle} and \code{message})
 }
@@ -79,17 +79,21 @@ library(dubois)
 
 data <- dubois::managers \%>\%
   dplyr::select(race, year, pct_bosses_total) \%>\%
-  tidyr::pivot_wider(names_from = "race",
-  values_from = "pct_bosses_total")
+  tidyr::pivot_wider(
+    names_from = "race",
+    values_from = "pct_bosses_total"
+  )
 
 title <- "PARTICIPATION IN MANAGERIAL POSITIONS BY RACE IN BRAZIL."
 subtitle <- "INSPIRED BY: W.E.B. DU BOIS | DATA FROM: IBGE | GRAPHIC BY: ICARO BERNARDES"
 message <- "IN THE SERIES, USUALLY WHITES OCCUPY SLIGHTLY LESS GENERAL WORK POSITIONS. HOWEVER WHITES OCCUPY WAY MORE MANAGERIAL POSITIONS THAN BLACKS"
 
-dubois::db_area(data = data, order = "year", cat1 = "black", cat2 = "white",
-                limits = c(-3,4), filename = "managers.png",
-                title = title,
-                subtitle = subtitle,
-                message = message)
+dubois::db_area(
+  data = data, order = "year", cat1 = "black", cat2 = "white",
+  limits = c(-3, 4), filename = "managers.png",
+  title = title,
+  subtitle = subtitle,
+  message = message
+)
 
 }
