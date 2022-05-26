@@ -9,7 +9,8 @@ Description: Create Du Bois based plots using you own data with the
     terms of its variables to work correctly. Arguments that allow you to
     customize quality, texts and details of the plots are available.
 License: MIT + file LICENSE
-URL: https://github.com/IcaroBernardes/dubois
+URL: https://github.com/IcaroBernardes/dubois,
+    https://icarobernardes.github.io/dubois/
 BugReports: https://github.com/IcaroBernardes/dubois/issues
 Depends: 
     R (>= 2.10)
