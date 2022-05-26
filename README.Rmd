@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 ```
 
-# dubois <img align="right" src="https://github.com/IcaroBernardes/dubois/blob/master/man/figures/dubois.png" alt="logo" width="200"> 
+# dubois <img align="right" src="man/figures/dubois.png" alt="logo" width="200"> 
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -69,9 +69,14 @@ dubois::db_area(data = data, order = "year", cat1 = "black", cat2 = "white",
 ```
 
 <p align="center">
-<img src="https://github.com/IcaroBernardes/dubois/blob/master/man/figures/managers.png" alt="logo" height="500">
+<img src="man/figures/managers.png" alt="logo" height="500">
 </p>
 
 ## Challenge Posts
 
 - Icaro BSC [Twitter](https://twitter.com/IcaroBSC/status/1501323176088780800)
+
+## Similar packages
+
+- <a href='https://github.com/vladmedenica/themedubois' target='_blank'>`themedubois`</a>: theme_dubois() appplies the Du Bois style to ggplot graphics. It customizes font, colors, grids, legend and so on. While scale_xxxx_duboisx() applies the Du Bois palette to the fill/color of the plot;
+- <a href='https://github.com/18kimn/ggdubois' target='_blank'>`ggdubois`</a>: provides theme, pallete and scale in the Du Bois style. Also adds some geom_xxxx based on some of his posters. Examples are geom_pathspiral and geom_wovenbar.
